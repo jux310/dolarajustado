@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Header } from './components/Header';
 import { Chart } from './components/Chart';
+import { Footer } from './components/Footer';
 import { fetchDolarBolsa, fetchUVA } from './services/api';
 import { ChartData } from './types';
 import { Loader2 } from 'lucide-react';
@@ -49,9 +50,7 @@ function App() {
           <Chart data={data} />
         )}
         
-        <footer className="mt-8 text-center text-sm text-gray-500">
-          <p>Data provided by Argentina Datos API</p>
-        </footer>
+        <Footer />
       </div>
     </div>
   );
